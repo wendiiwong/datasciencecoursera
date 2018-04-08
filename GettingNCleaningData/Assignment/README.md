@@ -11,5 +11,12 @@ CodeBook.md | A code book that describes the variables, the data, and any transf
 run_analysis.R | R script for data cleaning and perform the analysis.
 HARfeaturesMean.txt | A tidy data set with the average of each feature's variable for each activity and each subject. 
 
+## Read and view the tidy data set using R
+Code to read the tidy data set from *HARfeaturesMean.txt* is included below : 
+``` R
+# Use read.table() to read the data, and View() to view the data
+data <- read.table(file_path, header = TRUE)
+View(data)
+```
 ## References
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+1. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
