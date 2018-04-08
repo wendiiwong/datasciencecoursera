@@ -1,13 +1,41 @@
 
 ## Code Book - Human Activity Recognition Using Smartphones 
 
+### Key Concepts
+To achieve the project's goal to prepare tidy data that can be used for later analysis, five main steps are included.
 
+#### Merges the training and the test sets to create one data set
+First of all, both test and train data is read from the following file:
+* features.txt
+* activity_labels.txt
+* test/X_test.txt
+* test/Y_test.txt
+* test/subject_test.txt
+* train/X_train.txt
+* train/Y_train.txt
+* train/subject_train.txt
+
+#### Extract the measurements on the mean and standard deviation for each measument
+Extract the column of mean and standard deviation variables.
+
+#### Uses descriptive activity name to activities in the data set
+Replace the activity id in the data set to descriptive activity name.
+
+#### Label the data set appropriately 
+Rename the column name to appropriate and readable names.
+
+#### Create another independent tidy data set with average of each variable for each activity and each subject
+After the tidy data set is ready, create another independent tidy data set and export it to a text file. 
+The new data set stores average of each variable for each activity and each subject. 
+
+### List of variables  
 **subjectId**
 * Subject ID
-  * 1..30 Subject ID who performed the activity for each window sample.
+  * 1..30 An identification number to identify each unique volunteer who performed the activity for each window sample.
          
 **activity**
-* Activity Name
+* Name of activity performed by volunteers(subjects) while wearing a smartphone (Samsung Galaxy S II) on the waist.
+* There are six activities in total:
   * WALKING
   * WALKING_UPSTAIRS
   * WALKING_DOWNSTAIRS
