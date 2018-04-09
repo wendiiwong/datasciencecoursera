@@ -6,10 +6,10 @@ This project is the work from Coursera Course "Getting and Cleaning Data". The p
 ## Repositary Contents
 File Name | Description
 --------- | -----------
-README.md | Documentation explaining the project and how to use files contained in the repository.
-CodeBook.md | A code book that describes the variables, the data, and any transformations or work that performed to clean up the data.
-run_analysis.R | R script for data cleaning and perform the analysis.
-HARfeaturesMean.txt | A tidy data set with the average of each feature's variable for each activity and each subject. 
+[README.md](https://github.com/wendiiwong/datasciencecoursera/blob/master/GettingNCleaningData/Assignment/README.md) | Documentation explaining the project and how to use files contained in the repository.
+[CodeBook.md](https://github.com/wendiiwong/datasciencecoursera/blob/master/GettingNCleaningData/Assignment/CodeBook.md) | A code book that describes the variables, the data, and any transformations or work that performed to clean up the data.
+[run_analysis.R](https://github.com/wendiiwong/datasciencecoursera/blob/master/GettingNCleaningData/Assignment/run_analysis.R) | R script for data cleaning and perform the analysis.
+[HARfeaturesMean.txt](https://github.com/wendiiwong/datasciencecoursera/blob/master/GettingNCleaningData/Assignment/HARfeaturesMean.txt) | A tidy data set with the average of each feature's variable for each activity and each subject. 
 
 ## Step To Run the Code
 * Download the [raw data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
