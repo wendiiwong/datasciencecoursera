@@ -6,14 +6,14 @@ To achieve the project's goal to prepare tidy data that can be used for later an
 
 ### STEP 1 : Merges the training and the test sets to create one data set
 First of all, both test and train data is read from the following file:
-* features.txt
-* activity_labels.txt
-* test/X_test.txt
-* test/Y_test.txt
-* test/subject_test.txt
-* train/X_train.txt
-* train/Y_train.txt
-* train/subject_train.txt
+* *features.txt*
+* *activity_labels.txt*
+* *test/X_test.txt*
+* *test/Y_test.txt*
+* *test/subject_test.txt*
+* *train/X_train.txt*
+* *train/Y_train.txt*
+* *train/subject_train.txt*
 
 ### STEP 2 : Extract the measurements on the mean and standard deviation for each measument
 Extract the column of mean and standard deviation variables.
