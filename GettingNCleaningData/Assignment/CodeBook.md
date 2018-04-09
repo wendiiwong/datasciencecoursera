@@ -90,79 +90,78 @@ HARfeaturesMean <- HARData %>%
 
 
 ## Data set : 
-The data set contains of 180 records, 6 activities per volunteer. 
-
+The data set contains of 180 records and 68 variables. Each record indicate each activity performed by each volunteer. There are 30 volunteer and 6 activities in total. The variables included subjectId, activity, and 66 average of each variable. Refer to the table below for more detail information.  
 
 Variable Name | |Description
 --------------|-|-------------
 subjectId|1..30|An identification number to identify each unique volunteer who performed the activity for each window sample.
 activity|WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Name of activity performed by volunteers(subjects) while wearing a smartphone (Samsung Galaxy S II) on the waist. There are six activities in total.
-timeBodyAccMeanX||average of mean value of time body acceleration signals for x-axis for each activitiy and each subject
-timeBodyAccMeanY||average of mean value of time body acceleration signals for Y-axis for each activitiy and each subject
-timeBodyAccMeanZ||average of mean value of time body acceleration signals for Z-axis for each activitiy and each subject
-timeBodyAccStdX||average of standard deviation of time body acceleration signals for X-axis for each activitiy and each subject
-timeBodyAccStdY||average of standard deviation of time body acceleration signals for Y-axis for each activitiy and each subject
-timeBodyAccStdZ||average of standard deviation of time body acceleration signals for Z-axis for each activitiy and each subject
-timeGravityAccMeanX||average of mean value of time gravity acceleration signals for X-axis for each activitiy and each subject
-timeGravityAccMeanY||average of mean value of time gravity acceleration signals for Y-axis for each activitiy and each subject
-timeGravityAccMeanZ||average of mean value of time gravity acceleration signals for Z-axis for each activitiy and each subject
-timeGravityAccStdX||average of standard deviation of time gravity acceleration signals for X-axis for each activitiy and each subject
-timeGravityAccStdY||average of standard deviation of time gravity acceleration signals for Y-axis for each activitiy and each subject
-timeGravityAccStdZ||average of standard deviation of time gravity acceleration signals for Z-axis for each activitiy and each subject
-timeBodyAccJerkMeanX||average of mean value of time body acceleration Jerk signals for X-axis for each activitiy and each subject
-timeBodyAccJerkMeanY||average of mean value of time body acceleration Jerk signals for Y-axis for each activitiy and each subject
-timeBodyAccJerkMeanZ||average of mean value of time body acceleration Jerk signals for Z-axis for each activitiy and each subject
-timeBodyAccJerkStdX||average of standard deviation of time body acceleration Jerk signals for X-axis for each activitiy and each subject
-timeBodyAccJerkStdY||average of standard deviation of time body acceleration Jerk signals for Y-axis for each activitiy and each subject
-timeBodyAccJerkStdZ||average of standard deviation of time body acceleration Jerk signals for Z-axis for each activitiy and each subject
-timeBodyGyroMeanX||average of mean value of time body Gyro signals for X-axis for each activitiy and each subject
-timeBodyGyroMeanY||average of mean value of time body Gyro signals for Y-axis for each activitiy and each subject
-timeBodyGyroMeanZ||average of mean value of time body Gyro signals for Z-axis for each activitiy and each subject
-timeBodyGyroStdX||average of standard deviation of time body Gyro signals for X-axis for each activitiy and each subject
-timeBodyGyroStdY||average of standard deviation of time body Gyro signals for Y-axis for each activitiy and each subject
-timeBodyGyroStdZ||average of standard deviation of time body Gyro signals for Z-axis for each activitiy and each subject
-timeBodyGyroJerkMeanX||average of mean value of time body Gyro Jerk signals for X-axis for each activitiy and each subject
-timeBodyGyroJerkMeanY||average of mean value of time body Gyro Jerk signals for Y-axis for each activitiy and each subject
-timeBodyGyroJerkMeanZ||average of mean value of time body Gyro Jerk signals for Z-axis for each activitiy and each subject
-timeBodyGyroJerkStdX||average of standard deviation of time body Gyro Jerk signals for X-axis for each activitiy and each subject
-timeBodyGyroJerkStdY||average of standard deviation of time body Gyro Jerk signals for Y-axis for each activitiy and each subject
-timeBodyGyroJerkStdZ||average of standard deviation of time body Gyro Jerk signals for Z-axis for each activitiy and each subject
-timeBodyAccMagMean||average of mean value of time body acceleration magnitude signals for each activitiy and each subject
-timeBodyAccMagStd||average of standard deviation of time body acceleration magnitude signals for each activitiy and each subject
-timeGravityAccMagMean||average of mean value of time gravity acceleration magnitude signals for each activitiy and each subject
-timeGravityAccMagStd||average of standard deviation of time gravity acceleration magnitude signals for each activitiy and each subject
-timeBodyAccJerkMagMean||average of mean value of time body acceleration Jerk magnitude signals for each activitiy and each subject
-timeBodyAccJerkMagStd||average of standard deviation of time body acceleration Jerk magnitude signals for each activitiy and each subject
-timeBodyGyroMagMean||average of mean value of time body Gyro magnitude signals for each activitiy and each subject
-timeBodyGyroMagStd||average of standard deviation of time body Gyro magnitude signals for each activitiy and each subject
-timeBodyGyroJerkMagMean||average of mean of time body Gyro Jerk magnitude signals for each activitiy and each subject
-timeBodyGyroJerkMagStd||average of standard deviation of time body Gyro Jerk magnitude signals for each activitiy and each subject
-freqBodyAccMeanX||average of mean value of frequency body acceleration signals for X-axis for each activitiy and each subject
-freqBodyAccMeanY||average of mean value of frequency body acceleration signals for Y-axis for each activitiy and each subject
-freqBodyAccMeanZ||average of mean value of frequency body acceleration signals for Z-axis for each activitiy and each subject
-freqBodyAccStdX||average of standard deviation of frequency body acceleration signals for X-axis for each activitiy and each subject
-freqBodyAccStdY||average of standard deviation of frequency body acceleration signals for Y-axis for each activitiy and each subject
-freqBodyAccStdZ||average of standard deviation of frequency body acceleration signals for Z-axis for each activitiy and each subject
-freqBodyAccJerkMeanX||average of mean value of frequency body acceleration Jerk signals for X-axis for each activitiy and each subject
-freqBodyAccJerkMeanY||average of mean value of frequency body acceleration Jerk signals for Y-axis for each activitiy and each subject
-freqBodyAccJerkMeanZ||average of mean value of frequency body acceleration Jerk signals for Z-axis for each activitiy and each subject
-freqBodyAccJerkStdX||average of standard deviation of frequency body acceleration Jerk signals for X-axis for each activitiy and each subject
-freqBodyAccJerkStdY||average of standard deviation of frequency body acceleration Jerk signals for Y-axis for each activitiy and each subject
-freqBodyAccJerkStdZ||average of standard deviation of frequency body acceleration Jerk signals for Z-axis for each activitiy and each subject
-freqBodyGyroMeanX||average of mean value of frequency body Gyro signals for X-axis for each activitiy and each subject
-freqBodyGyroMeanY||average of mean value of frequency body Gyro signals for Y-axis for each activitiy and each subject
-freqBodyGyroMeanZ||average of mean value of frequency body Gyro signals for Z-axis for each activitiy and each subject
-freqBodyGyroStdX||average of standard deviation of frequency body Gyro signals for X-axis for each activitiy and each subject
-freqBodyGyroStdY||average of standard deviation of frequency body Gyro signals for Y-axis for each activitiy and each subject
-freqBodyGyroStdZ||average of standard deviation of frequency body Gyro signals for Z-axis for each activitiy and each subject
-freqBodyAccMagMean||average of mean value of frequency body acceleration magnitude signals for each activitiy and each subject
-freqBodyAccMagStd||average of standard deviation of frequency body acceleration magnitude signals for each activitiy and each subject
-freqBodyAccJerkMagMean||average of mean value of frequency body acceleration Jerk magnitude signals for each activitiy and each subject
-freqBodyAccJerkMagStd||average of standard deviation of frequency body acceleration Jerk magnitude signals for each activitiy and each subject
-freqBodyGyroMagMean||average of mean value of frequency body Gyro magnitude signals for each activitiy and each subject
-freqBodyGyroMagStd||average of standard deviation of frequency body Gyro magnitude signals for each activitiy and each subject
-freqBodyGyroJerkMagMean||average of mean value of frequency body Gyro Jerk magnitude signals for each activitiy and each subject
-freqBodyGyroJerkMagStd||average of standard deviation of frequency body Gyro Jerk magnitude signals for each activitiy and each subject
+timeBodyAccMeanX|-1..1|average of mean value of time body acceleration signals for x-axis for each activitiy and each subject
+timeBodyAccMeanY|-1..1|average of mean value of time body acceleration signals for Y-axis for each activitiy and each subject
+timeBodyAccMeanZ|-1..1|average of mean value of time body acceleration signals for Z-axis for each activitiy and each subject
+timeBodyAccStdX|-1..1|average of standard deviation of time body acceleration signals for X-axis for each activitiy and each subject
+timeBodyAccStdY|-1..1|average of standard deviation of time body acceleration signals for Y-axis for each activitiy and each subject
+timeBodyAccStdZ|-1..1|average of standard deviation of time body acceleration signals for Z-axis for each activitiy and each subject
+timeGravityAccMeanX|-1..1|average of mean value of time gravity acceleration signals for X-axis for each activitiy and each subject
+timeGravityAccMeanY|-1..1|average of mean value of time gravity acceleration signals for Y-axis for each activitiy and each subject
+timeGravityAccMeanZ|-1..1|average of mean value of time gravity acceleration signals for Z-axis for each activitiy and each subject
+timeGravityAccStdX|-1..1|average of standard deviation of time gravity acceleration signals for X-axis for each activitiy and each subject
+timeGravityAccStdY|-1..1|average of standard deviation of time gravity acceleration signals for Y-axis for each activitiy and each subject
+timeGravityAccStdZ|-1..1|average of standard deviation of time gravity acceleration signals for Z-axis for each activitiy and each subject
+timeBodyAccJerkMeanX|-1..1|average of mean value of time body acceleration Jerk signals for X-axis for each activitiy and each subject
+timeBodyAccJerkMeanY|-1..1|average of mean value of time body acceleration Jerk signals for Y-axis for each activitiy and each subject
+timeBodyAccJerkMeanZ|-1..1|average of mean value of time body acceleration Jerk signals for Z-axis for each activitiy and each subject
+timeBodyAccJerkStdX|-1..1|average of standard deviation of time body acceleration Jerk signals for X-axis for each activitiy and each subject
+timeBodyAccJerkStdY|-1..1|average of standard deviation of time body acceleration Jerk signals for Y-axis for each activitiy and each subject
+timeBodyAccJerkStdZ|-1..1|average of standard deviation of time body acceleration Jerk signals for Z-axis for each activitiy and each subject
+timeBodyGyroMeanX|-1..1|average of mean value of time body Gyro signals for X-axis for each activitiy and each subject
+timeBodyGyroMeanY|-1..1|average of mean value of time body Gyro signals for Y-axis for each activitiy and each subject
+timeBodyGyroMeanZ|-1..1|average of mean value of time body Gyro signals for Z-axis for each activitiy and each subject
+timeBodyGyroStdX|-1..1|average of standard deviation of time body Gyro signals for X-axis for each activitiy and each subject
+timeBodyGyroStdY|-1..1|average of standard deviation of time body Gyro signals for Y-axis for each activitiy and each subject
+timeBodyGyroStdZ|-1..1|average of standard deviation of time body Gyro signals for Z-axis for each activitiy and each subject
+timeBodyGyroJerkMeanX|-1..1|average of mean value of time body Gyro Jerk signals for X-axis for each activitiy and each subject
+timeBodyGyroJerkMeanY|-1..1|average of mean value of time body Gyro Jerk signals for Y-axis for each activitiy and each subject
+timeBodyGyroJerkMeanZ|-1..1|average of mean value of time body Gyro Jerk signals for Z-axis for each activitiy and each subject
+timeBodyGyroJerkStdX|-1..1|average of standard deviation of time body Gyro Jerk signals for X-axis for each activitiy and each subject
+timeBodyGyroJerkStdY|-1..1|average of standard deviation of time body Gyro Jerk signals for Y-axis for each activitiy and each subject
+timeBodyGyroJerkStdZ|-1..1|average of standard deviation of time body Gyro Jerk signals for Z-axis for each activitiy and each subject
+timeBodyAccMagMean|-1..1|average of mean value of time body acceleration magnitude signals for each activitiy and each subject
+timeBodyAccMagStd|-1..1|average of standard deviation of time body acceleration magnitude signals for each activitiy and each subject
+timeGravityAccMagMean|-1..1|average of mean value of time gravity acceleration magnitude signals for each activitiy and each subject
+timeGravityAccMagStd|-1..1|average of standard deviation of time gravity acceleration magnitude signals for each activitiy and each subject
+timeBodyAccJerkMagMean|-1..1|average of mean value of time body acceleration Jerk magnitude signals for each activitiy and each subject
+timeBodyAccJerkMagStd|-1..1|average of standard deviation of time body acceleration Jerk magnitude signals for each activitiy and each subject
+timeBodyGyroMagMean|-1..1|average of mean value of time body Gyro magnitude signals for each activitiy and each subject
+timeBodyGyroMagStd|-1..1|average of standard deviation of time body Gyro magnitude signals for each activitiy and each subject
+timeBodyGyroJerkMagMean|-1..1|average of mean of time body Gyro Jerk magnitude signals for each activitiy and each subject
+timeBodyGyroJerkMagStd|-1..1|average of standard deviation of time body Gyro Jerk magnitude signals for each activitiy and each subject
+freqBodyAccMeanX|-1..1|average of mean value of frequency body acceleration signals for X-axis for each activitiy and each subject
+freqBodyAccMeanY|-1..1|average of mean value of frequency body acceleration signals for Y-axis for each activitiy and each subject
+freqBodyAccMeanZ|-1..1|average of mean value of frequency body acceleration signals for Z-axis for each activitiy and each subject
+freqBodyAccStdX|-1..1|average of standard deviation of frequency body acceleration signals for X-axis for each activitiy and each subject
+freqBodyAccStdY|-1..1|average of standard deviation of frequency body acceleration signals for Y-axis for each activitiy and each subject
+freqBodyAccStdZ|-1..1|average of standard deviation of frequency body acceleration signals for Z-axis for each activitiy and each subject
+freqBodyAccJerkMeanX|-1..1|average of mean value of frequency body acceleration Jerk signals for X-axis for each activitiy and each subject
+freqBodyAccJerkMeanY|-1..1|average of mean value of frequency body acceleration Jerk signals for Y-axis for each activitiy and each subject
+freqBodyAccJerkMeanZ|-1..1|average of mean value of frequency body acceleration Jerk signals for Z-axis for each activitiy and each subject
+freqBodyAccJerkStdX|-1..1|average of standard deviation of frequency body acceleration Jerk signals for X-axis for each activitiy and each subject
+freqBodyAccJerkStdY|-1..1|average of standard deviation of frequency body acceleration Jerk signals for Y-axis for each activitiy and each subject
+freqBodyAccJerkStdZ|-1..1|average of standard deviation of frequency body acceleration Jerk signals for Z-axis for each activitiy and each subject
+freqBodyGyroMeanX|-1..1|average of mean value of frequency body Gyro signals for X-axis for each activitiy and each subject
+freqBodyGyroMeanY|-1..1|average of mean value of frequency body Gyro signals for Y-axis for each activitiy and each subject
+freqBodyGyroMeanZ|-1..1|average of mean value of frequency body Gyro signals for Z-axis for each activitiy and each subject
+freqBodyGyroStdX|-1..1|average of standard deviation of frequency body Gyro signals for X-axis for each activitiy and each subject
+freqBodyGyroStdY|-1..1|average of standard deviation of frequency body Gyro signals for Y-axis for each activitiy and each subject
+freqBodyGyroStdZ|-1..1|average of standard deviation of frequency body Gyro signals for Z-axis for each activitiy and each subject
+freqBodyAccMagMean|-1..1|average of mean value of frequency body acceleration magnitude signals for each activitiy and each subject
+freqBodyAccMagStd|-1..1|average of standard deviation of frequency body acceleration magnitude signals for each activitiy and each subject
+freqBodyAccJerkMagMean|-1..1|average of mean value of frequency body acceleration Jerk magnitude signals for each activitiy and each subject
+freqBodyAccJerkMagStd|-1..1|average of standard deviation of frequency body acceleration Jerk magnitude signals for each activitiy and each subject
+freqBodyGyroMagMean|-1..1|average of mean value of frequency body Gyro magnitude signals for each activitiy and each subject
+freqBodyGyroMagStd|-1..1|average of standard deviation of frequency body Gyro magnitude signals for each activitiy and each subject
+freqBodyGyroJerkMagMean|-1..1|average of mean value of frequency body Gyro Jerk magnitude signals for each activitiy and each subject
+freqBodyGyroJerkMagStd|-1..1|average of standard deviation of frequency body Gyro Jerk magnitude signals for each activitiy and each subject
 
 
 
