@@ -11,7 +11,14 @@ CodeBook.md | A code book that describes the variables, the data, and any transf
 run_analysis.R | R script for data cleaning and perform the analysis.
 HARfeaturesMean.txt | A tidy data set with the average of each feature's variable for each activity and each subject. 
 
-## Read and view the tidy data set using R
+## Step To Run the Code
+* Download the [raw data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+* Unzip to R working Directory
+* Rename the folder name to "UCIHAR_Dataset"
+* Ensure the related Packages are installed (`plyr` and `dplyr` packages). 
+* Now you could run `run_analysis.R` in R and it will generates the data file `HARfeaturesMean.txt`.
+
+## Read And View The Tidy Data Set Using R
 Code to read the tidy data set from *HARfeaturesMean.txt* is included below : 
 ``` R
 # Use read.table() to read the data, and View() to view the data
