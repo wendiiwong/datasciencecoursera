@@ -1,6 +1,9 @@
 
 ## Code Book - Human Activity Recognition Using Smartphones 
 
+## Introduction
+This code book describes the variables, the data, and work that performed to clean up the raw data for Getting and Cleaning Data Course Project. The goal of the project is to prepare a tidy data set that can be used for later analysis. The data used in this project is collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available on UCI Machine Learning Repository, and you can download the raw data for the project. Refer to [README.md](https://github.com/wendiiwong/datasciencecoursera/blob/master/GettingNCleaningData/Assignment/README.md) for information regarding how to read the dataset into R. 
+
 ## Key Concepts
 To achieve the project's goal to prepare tidy data that can be used for later analysis, five main steps are included.
 
